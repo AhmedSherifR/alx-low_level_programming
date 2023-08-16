@@ -4,7 +4,7 @@
 *c: character to be verified
 *Return: return 0 or 1
 */
-int _isLower(int c)
+int _islower(int c)
 {
 	if (c >= 97)
 	return (1);
