@@ -7,30 +7,15 @@
  */
 int main(void)
 {
-	int i = 1;
+	int i;
 
-	while (i < 101)
+	for (i = 1; i <= 100; i++)
 	{
-	if (i % 3 == 0)
-		{
-		printf("fizz ");
-		i++;
-		continue;
-		}
-	if (i % 5 == 0)
-		{
-			if (i == 100)
-			{
-			printf("buzz");
-			break;
-			}
-		printf("buzz ");
-		i++;
-		continue;
-		}
-	printf("%d ", i);
-	i++;
+		(i % 3 == 0) ? printf("Fizz") : 0;
+		(i % 5 == 0) ? printf("Buzz") : 0;
+		(i % 3 != 0 && i % 5 != 0) ? printf("%d", i) : 0;
+		(i != 100) ? printf(" ") : 0;
 	}
-	putchar(10);
+	printf("\n");
 	return (0);
 }
