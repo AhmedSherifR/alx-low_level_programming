@@ -4,7 +4,7 @@
 *@c: character to be verified
 *Return: return 0 or 1
 */
-int __isupper(int c)
+int _isupper(int c)
 {
 	if (c >= 97)
 	return (0);
