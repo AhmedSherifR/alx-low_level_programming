@@ -19,6 +19,11 @@ int main(void)
 		}
 	if (i % 5 == 0)
 		{
+			if (i == 100)
+			{
+			printf("buzz");
+			break;
+			}
 		printf("buzz ");
 		i++;
 		continue;
