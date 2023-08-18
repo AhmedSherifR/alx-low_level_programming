@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_islower - checks if a character is in lowercase
+*_isupper - checks if a character is in uppercase
 *@c: character to be verified
 *Return: return 0 or 1
 */
