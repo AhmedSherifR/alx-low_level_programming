@@ -28,6 +28,9 @@ int _atoi(char *s)
 		}
 
 	result = result * 10 + (s[i] - '0');
+
+	if (s[i + 1] < '0' || s[i + 1] > '9')
+		break;
 	}
 
 	if (neg)
