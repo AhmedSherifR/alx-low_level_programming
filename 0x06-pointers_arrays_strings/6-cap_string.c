@@ -2,37 +2,44 @@
 
 /**
  * cap_string - Capitalizes all words of a string.
- * @s: The string to be capitalized.
+ * @s1: The string to be capitalized.
  *
  * Return: A pointer to the changed string.
  *
-char *cap_string(char *s)
+char *cap_string(char *s1)
 {
 	int i, j;
-	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	i = 0;
-	
-	while (*(s + i) != '\0')
+	for (i = 0; i < _strlen(s1) - 1; i++)
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (
+			s1[i] == ' ' ||
+			s1[i] == '\t' ||
+			s1[i] == '\n' ||
+			s1[i] == ',' ||
+			s1[i] == ';' ||
+			s1[i] == '.' ||
+			s1[i] == '!' ||
+			s1[i] == '?' ||
+			s1[i] == '"' ||
+			s1[i] == '(' ||
+			s1[i] == ')' ||
+			s1[i] == '{' ||
+			s1[i] == '}' ||
+			i == 0
+		)
 		{
-			if (i == 0)
+			for (j = 'a'; j <= 'z'; j++)
 			{
-				*(s + i) = *(s + i) - 32;
-			}
-			else
-			{
-				for (j = 0; j <= 12; j++)
+				if (s1[i + 1] == j && i != 0)
 				{
-					if (a[j] == *(s + i - 1))
-					{
-						*(s + i) = *(s + i) - 32;
-					}
+					s1[i + 1] = j - 32;
+				} else if (s1[i] == j && i == 0)
+				{
+					s1[i] = j - 32;
 				}
 			}
 		}
-	i++;
 	}
-	return (s);
+	return (s1);
 }
