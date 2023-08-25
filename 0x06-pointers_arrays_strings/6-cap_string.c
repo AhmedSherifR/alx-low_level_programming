@@ -2,16 +2,17 @@
 
 /**
  * cap_string - Capitalizes all words of a string.
- * @str: The string to be capitalized.
+ * @s: The string to be capitalized.
  *
  * Return: A pointer to the changed string.
- */
+ *
 char *cap_string(char *s)
 {
 	int i, j;
 	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
 	i = 0;
+	
 	while (*(s + i) != '\0')
 	{
 		if (*(s + i) >= 'a' && *(s + i) <= 'z')
