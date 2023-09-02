@@ -1,1 +1,1 @@
-C debugging
+static libraries
