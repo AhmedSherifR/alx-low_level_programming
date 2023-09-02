@@ -3,8 +3,8 @@
  * main - Write a program that prints all arguments it receives
  *        All arguments should be printed, including the first on
  *
- * @argc: This is the argument count 
- * @argv: This is the argument array of strings
+ * @argc: This is the argument count
+ * @argv: This is the argument array
  *
  * Return: 0;
  */
