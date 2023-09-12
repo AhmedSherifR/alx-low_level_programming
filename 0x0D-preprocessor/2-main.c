@@ -1,8 +1,9 @@
 #include <stdio.h>
-/*
- * main - prints out the name of the file complied from
- * no inputs
- * return - 0 if sucsses
+
+/**
+ * main - prints the name of the file it was compiled from
+ *
+ * Return: Everything worked ok
  */
 
 int main(void)
